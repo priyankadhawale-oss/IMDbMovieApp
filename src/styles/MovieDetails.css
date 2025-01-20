@@ -1,0 +1,138 @@
+.movie-details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+						   
+			   
+}
+
+.movie-info {
+  display: flex;
+  padding: 40px; /* Increased padding for a boxed effect */
+  margin: 20px auto; /* Added margin to center the box */
+  max-width: 1200px; /* Restrict width for consistent layout */
+  color: white;
+					  
+  background-size: cover;
+							   
+  background-position: center;
+  height: 50vh; /* Covers half the viewport height */
+  border-radius: 12px;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6); /* Fallback background for readability */
+			  
+}
+
+.movie-info-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+.movie-poster {
+  border-radius: 8px;
+  width: 150px;
+  height: auto;
+					  
+										   
+}
+
+.movie-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.movie-title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.movie-rating,
+.movie-release {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.movie-overview {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.movie-cast {
+  padding: 20px;
+  padding-left: 80px;
+  background: #f4f4f4; /* Light background for the cast section */
+}
+
+.movie-cast h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+			  
+}
+
+.cast-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* Increased gap for better spacing */
+			
+}
+
+.cast-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 170px; /* Increased width for the larger images */
+}
+
+.cast-photo {
+  width: 150px; /* Increased size by 50px compared to the previous version */
+  height: 200px; /* Maintains aspect ratio */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.cast-extra-photo {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 10px; /* Slight spacing for alignment */
+}
+
+.cast-name {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.cast-character {
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .movie-info {
+    flex-direction: column;
+    height: auto; /* Allow flexibility for smaller screens */
+  }
+
+  .movie-info-content {
+    flex-direction: column;
+  }
+
+  .cast-card {
+    width: 120px;
+  }
+
+  .cast-photo,
+  .cast-extra-photo {
+    width: 100px;
+    height: 150px;
+  }
+}
